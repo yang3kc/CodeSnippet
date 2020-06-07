@@ -35,3 +35,12 @@ plt.gca().set_xticklabels([])
 ```python
 plt.xticks(xs, list(map(format_date_time, xs)), rotation=35, ha='right', fontsize=fontsize);
 ```
+
+## Remove axis
+
+```python
+plt.gca().spines['top'].set_visible(False)
+plt.gca().spines['right'].set_visible(False)
+plt.gca().spines['bottom'].set_visible(False)
+plt.gca().spines['left'].set_visible(False)
+```
