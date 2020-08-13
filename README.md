@@ -44,3 +44,9 @@ plt.gca().spines['right'].set_visible(False)
 plt.gca().spines['bottom'].set_visible(False)
 plt.gca().spines['left'].set_visible(False)
 ```
+
+## Grid
+
+```python
+plt.gca().xaxis.grid(True)
+```
