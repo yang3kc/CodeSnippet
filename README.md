@@ -4,6 +4,12 @@ Common code snippets.
 
 # matplotlib
 
+## Set default font size
+
+```python
+plt.rcParams.update({'font.size': 14})
+```
+
 ## Tick label format
 
 ### Scientific notation
