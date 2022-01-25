@@ -56,3 +56,9 @@ plt.gca().spines['left'].set_visible(False)
 ```python
 plt.gca().xaxis.grid(True)
 ```
+
+## Text
+
+```python
+plt.text(-0.1, 1.1, plot_label, transform = plt.gca().transAxes)
+```
