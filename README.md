@@ -36,6 +36,12 @@ plt.gca().yaxis.set_major_formatter(mtick.PercentFormatter(xmax=100, decimals=No
 plt.gca().set_xticklabels([])
 ```
 
+Or
+
+```python
+plt.yticks([], [])
+```
+
 ### customize axis ticks
 
 ```python
