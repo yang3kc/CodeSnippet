@@ -63,6 +63,13 @@ plt.gca().spines['left'].set_visible(False)
 plt.gca().xaxis.grid(True)
 ```
 
+Put grid behind plot
+
+```python
+plt.rcParams.update({'axes.axisbelow': True})
+```
+
+
 ## Text
 
 ```python
