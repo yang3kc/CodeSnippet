@@ -75,3 +75,9 @@ plt.rcParams.update({'axes.axisbelow': True})
 ```python
 plt.text(-0.1, 1.1, plot_label, transform = plt.gca().transAxes)
 ```
+
+## Legend
+
+```python
+plt.legend(frameon=False, fontsize=12, labelspacing=0.1 ,  bbox_to_anchor=(-0.01, 1.03), loc="upper left")
+```
