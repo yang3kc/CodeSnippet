@@ -81,3 +81,9 @@ plt.text(-0.1, 1.1, plot_label, transform = plt.gca().transAxes)
 ```python
 plt.legend(frameon=False, fontsize=12, labelspacing=0.1 ,  bbox_to_anchor=(-0.01, 1.03), loc="upper left")
 ```
+
+## Adjust subplot spacing
+```python
+plt.tight_layout()
+plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=0.2, hspace=0.4)
+```
