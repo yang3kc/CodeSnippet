@@ -6,7 +6,8 @@ The goal is to visualize data in each US state and place the states in a grid la
 
 ## Code
 
-- [us_tile_grid_coordinates.ipynb](us_tile_grid_coordinates.ipynb): contains the code to generate the coordinates for each state in the grid.
+- [us_tile_grid.py](us_tile_grid.py): contains the code to generate the tile grid visualization for the US.
+- [us_tile_grid.ipynb](us_tile_grid.ipynb): you can also check the code in the notebook.
 
 ## Coordinates
 
