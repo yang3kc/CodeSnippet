@@ -4,6 +4,8 @@ This folder provides the data and code to generate the tile grid visualization f
 
 The goal is to visualize data in each US state and place the states in a grid layout that roughly mimics the US map.
 
+See [us_tile_grid.pdf](us_tile_grid.pdf) for an example output.
+
 ## Code
 
 - [us_tile_grid.py](us_tile_grid.py): contains the code to generate the tile grid visualization for the US.
