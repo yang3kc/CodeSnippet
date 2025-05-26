@@ -2,36 +2,35 @@
 
 Common code snippets for LaTeX.
 
-## Fancy prompt box
+## Prompt boxes
+
+### Fancy prompt box
 
 Import tcolorbox package
 ```tex
-\usepackage{tcolorbox}
+\usepackage[breakable]{tcolorbox}
 ```
 
 Define `promptbox` command at the beginning of the document
 ```tex
-\newcommand{\promptbox}[3]{
-    \begin{tcolorbox}[
-        colback=white!95!gray,
-        colframe=gray!50!black,
-        rounded corners,
-        label={#1},
-        title={#2}
-    ]
-        #3
-    \end{tcolorbox}
+\newtcolorbox[auto counter]{promptbox}[2][]{
+    colback=white!95!gray,
+    colframe=gray!50!black,
+    breakable,
+    rounded corners,
+    title={Box \thetcbcounter: #2},
+    #1
 }
 ```
 
 Use the promptbox command to create a prompt box with a label, title, and content.
 ```tex
-\promptbox{box:label_name}{Prompt title}{
-    Prompt
-    }
+\begin{promptbox}[label={box:label_name}]{Prompt title}
+    Prompt content
+\end{promptbox}
 ```
 
-## Less fancy prompt box
+### Less fancy prompt box
 
 Define `prompt` command at the beginning of the document.
 ```tex
@@ -55,7 +54,7 @@ Use the prompt command to create a prompt box with a label and content.
     }
 ```
 
-## Table
+## Tables
 
 ### Resize table size
 
