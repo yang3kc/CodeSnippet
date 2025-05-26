@@ -25,7 +25,7 @@ Define `promptbox` command at the beginning of the document
 ```
 
 Use the promptbox command to create a prompt box with a label, title, and content.
-```txt
+```tex
 \promptbox{box:label_name}{Prompt title}{
     Prompt
     }
@@ -49,8 +49,24 @@ Define `prompt` command at the beginning of the document.
 ```
 
 Use the prompt command to create a prompt box with a label and content.
-```txt
+```tex
 \prompt{Prompt title}{
     Prompt
     }
+```
+
+## Table
+
+### Resize table size
+
+```tex
+\begin{table}
+    \centering
+    \caption{Caption}
+    \label{tab}
+    \resizebox{\columnwidth}{!}{
+        \begin{tabular}{ll}
+        \end{tabular}
+    }
+\end{table}
 ```
